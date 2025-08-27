@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magic Video Player</title>
+    <style>
+        /* 确保视频铺满整个屏幕，没有白边 */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+            background-color: #000; /* 黑色背景，避免闪烁 */
+        }
+        video {
+            width: 100vw; /* 视窗宽度 */
+            height: 100vh; /* 视窗高度 */
+            object-fit: contain; /* 保持视频比例，完整显示 */
+        }
+    </style>
+</head>
+<body>
+    <video 
+        src="https://cdn.jsdelivr.net/gh/ryan-lele/vr1/abc.mp4" 
+        autoplay 
+        muted 
+        playsinline 
+        controls>
+    </video>
+</body>
+</html>
