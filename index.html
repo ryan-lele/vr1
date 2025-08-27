@@ -9,7 +9,7 @@
       AFRAME.registerComponent('target-handler', {
         init: function() {
           // 【第一处修改】：把这里的链接换成你自己的视频页面URL
-          const videoURL = "https://your-website.com/apple-video.html"; 
+          const videoURL = "https://cdn.jsdelivr.net/gh/ryan-lele/vr1/abc.mp4";
           let targetFound = false; // 防止重复跳转
 
           this.el.addEventListener("targetFound", event => {
@@ -31,3 +31,4 @@
     </a-scene>
   </body>
 </html>
+
